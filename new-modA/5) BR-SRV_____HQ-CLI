@@ -36,5 +36,4 @@ ss -ltnp | grep sshd
 -------имя хоста/NTP---------
 hostnamectl hostname hq-cli.au-team.irpo
 	exec bash
-timedatectl set-timezone Europe/Moscow
 ip -br -c a
