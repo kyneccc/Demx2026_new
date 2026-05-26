@@ -1,7 +1,5 @@
 
-==========BR-RTR====
-
-root/toor
+==========BR-RTR=========
 
 -------имя хоста---------
 hostnamectl hostname br-rtr.au-team.irpo
