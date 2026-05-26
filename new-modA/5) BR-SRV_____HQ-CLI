@@ -3,8 +3,6 @@
 -------имя хоста/NTP---------
 hostnamectl hostname br-srv.au-team.irpo
 	exec bash
-timedatectl set-timezone Europe/Moscow
-
 -------настройка интерфейсов-------------
 
 echo 'TYPE=eth' > /etc/net/ifaces/ens18/options
