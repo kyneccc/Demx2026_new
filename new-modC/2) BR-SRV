@@ -2,7 +2,7 @@
 
 mount -o loop /dev/sr0 /mnt/ -v
 ls -l /mnt/
-iconv -f UTF-8 -t UTF-8//IGNORE /mnt/Users.csv > /root/users_fix.csv
+iconv -f ISO-8859-1 -t UTF-8//IGNORE /mnt/Users.csv > /root/users_fix.csv
 cat << "EOF" > import.sh
 #!/bin/bash 
 #
