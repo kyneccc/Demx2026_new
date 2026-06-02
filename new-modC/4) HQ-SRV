@@ -53,7 +53,7 @@ weekly
 missingok
 notifempty 
 compress 
-minsize 10M
+minsize 15M
 } 
 EOF
 +++
