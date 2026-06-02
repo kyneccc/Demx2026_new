@@ -15,7 +15,7 @@ openssl genpkey -algorithm gost2012_256 \
  -pkeyopt paramset:TCB -out ca.key
 
 openssl req -new -x509 -md_gost12_256 \
- -days 90 -key ca.key -out ca.crt 
+ -days 35 -key ca.key -out ca.crt 
 Common Name (ROOT-CA.AU-TEAM.IRPO)
 
 openssl genpkey -algorithm gost2012_256 \
@@ -36,11 +36,11 @@ Common Name ( DOCKER.AU-TEAM.IRPO )
 
 openssl x509 -req -in web.au-team.irpo.csr \
  -CA ca.crt -CAkey ca.key -CAcreateserial \
- -out web.au-team.irpo.crt -days 30
+ -out web.au-team.irpo.crt -days 35
 
 openssl x509 -req -in docker.au-team.irpo.csr \
  -CA ca.crt -CAkey ca.key -CAcreateserial \
- -out docker.au-team.irpo.crt -days 30
+ -out docker.au-team.irpo.crt -days 35
 
 openssl engine
 openssl ciphers | tr ':' '\n' | grep GOST
