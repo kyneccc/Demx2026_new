@@ -130,7 +130,7 @@ sed -i 's/AUTO_LOCAL_RESOLVER=yes/AUTO_LOCAL_RESOLVER=no/' /etc/sysconfig/dnsmas
 
 cat <<'EOF' > /etc/dnsmasq.conf
 port=0
-interface=vlan200
+interface=vlan214
 listen-address=192.168.200.1
 dhcp-authoritative
 dhcp-range=interface:vlan214,192.168.200.2,192.168.200.2,255.255.255.240,6h
